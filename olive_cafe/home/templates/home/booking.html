@@ -1,0 +1,69 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Your Slot | Olive Cafe</title>
+
+    <link rel="stylesheet" href="{% static 'home/css/styles.css' %}">
+</head>
+
+<body>
+
+    <section class="booking-page">
+
+        <h1>Book Your Slot</h1>
+
+        <p>Reserve your table at Olive Cafe.</p>
+
+        <form method="POST">
+            {% csrf_token %}
+
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div>
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div>
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+
+            <div>
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" name="guests" min="1" max="20" required>
+            </div>
+
+            <div>
+                <label for="message">Special Request</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+
+            <button type="submit">
+                Confirm Booking
+            </button>
+
+        </form>
+
+    </section>
+
+</body>
+</html>
