@@ -1,0 +1,256 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Olive Cafe | Coffee & Good Moments</title>
+
+    <link rel="stylesheet" href="{% static 'home/css/styles.css' %}">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="/" class="logo">
+                OLIVE <span>CAFE</span>
+            </a>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <a href="#booking" class="btn btn-small">
+                Book My Slot
+            </a>
+
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="hero-subtitle">
+                WELCOME TO OLIVE CAFE
+            </p>
+
+            <h1>
+                A Perfect Place To
+                <span>Relax & Enjoy</span>
+            </h1>
+
+            <p class="hero-description">
+                Fresh coffee, delicious food and beautiful moments.
+                Come in, take a seat and make yourself at home.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#booking" class="btn">
+                    Book My Slot
+                </a>
+
+                <a href="#menu" class="btn btn-outline">
+                    Explore Menu
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Features -->
+    <section class="features">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <p>WHY OLIVE CAFE</p>
+                <h2>Made With Love</h2>
+            </div>
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+                    <div class="feature-icon">☕</div>
+                    <h3>Fresh Coffee</h3>
+                    <p>
+                        Freshly brewed coffee made from carefully selected beans.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🍰</div>
+                    <h3>Fresh Food</h3>
+                    <p>
+                        Delicious snacks and desserts prepared with quality ingredients.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">❤️</div>
+                    <h3>Great Moments</h3>
+                    <p>
+                        A comfortable place to meet friends, work and relax.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Menu Preview -->
+    <section class="menu-section" id="menu">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <p>OUR MENU</p>
+                <h2>Something For Everyone</h2>
+            </div>
+
+            <div class="menu-grid">
+
+                <div class="menu-card">
+                    <div class="menu-image coffee-image"></div>
+                    <div class="menu-content">
+                        <h3>Coffee</h3>
+                        <p>
+                            Cappuccino, Latte, Espresso and more.
+                        </p>
+                        <a href="#">View Menu →</a>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-image snacks-image"></div>
+                    <div class="menu-content">
+                        <h3>Snacks</h3>
+                        <p>
+                            Tasty snacks to enjoy with your favourite drink.
+                        </p>
+                        <a href="#">View Menu →</a>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-image dessert-image"></div>
+                    <div class="menu-content">
+                        <h3>Desserts</h3>
+                        <p>
+                            Sweet treats to make your day even better.
+                        </p>
+                        <a href="#">View Menu →</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="about" id="about">
+
+        <div class="container about-container">
+
+            <div class="about-content">
+
+                <p class="section-label">
+                    ABOUT OLIVE CAFE
+                </p>
+
+                <h2>
+                    More Than Just
+                    <span>A Cup Of Coffee</span>
+                </h2>
+
+                <p>
+                    Olive Cafe is a place where good coffee meets good
+                    conversations. Whether you're meeting friends,
+                    working on your laptop or simply taking a break,
+                    we want you to feel at home.
+                </p>
+
+                <a href="#contact" class="btn">
+                    Know More
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Booking -->
+    <section class="booking" id="booking">
+
+        <div class="container booking-container">
+
+            <p>PLAN YOUR VISIT</p>
+
+            <h2>
+                Reserve Your Favourite Spot
+            </h2>
+
+            <p>
+                Book your slot before you visit Olive Cafe.
+            </p>
+
+            <a href="#" class="btn">
+                Book My Slot
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="contact">
+
+        <div class="container footer-container">
+
+            <div>
+                <h2>OLIVE CAFE</h2>
+                <p>
+                    Fresh coffee. Good food. Great moments.
+                </p>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <p>📍 Chennai, Tamil Nadu</p>
+                <p>📞 +91 XXXXX XXXXX</p>
+                <p>✉️ hello@olivecafe.com</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 Olive Cafe. All Rights Reserved.
+        </div>
+
+    </footer>
+
+</body>
+</html>
