@@ -1,0 +1,274 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Booking Confirmed | Olive Cafe</title>
+
+    <link
+        rel="stylesheet"
+        href="{% static 'home/css/styles.css' %}"
+    >
+
+    <style>
+
+        /* ================================
+           SUCCESS PAGE
+        ================================= */
+
+        .success-page {
+            min-height: 100vh;
+            background: #f8f9f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 20px;
+        }
+
+        .success-container {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .success-card {
+            background: #ffffff;
+            border: 1px solid #e8ece3;
+            border-radius: 20px;
+            padding: 50px 40px;
+            text-align: center;
+            box-shadow: 0 12px 40px rgba(50, 65, 40, 0.08);
+        }
+
+        /* Check Icon */
+
+        .success-icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 25px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: #718355;
+            color: #ffffff;
+
+            font-size: 34px;
+            font-weight: 600;
+        }
+
+        .success-label {
+            color: #718355;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .success-card h1 {
+            color: #263322;
+            font-size: 36px;
+            margin: 0 0 15px;
+        }
+
+        .success-card p {
+            color: #6b7167;
+            font-size: 16px;
+            line-height: 1.7;
+            margin: 0 auto 30px;
+            max-width: 480px;
+        }
+
+        /* Information Box */
+
+        .success-info {
+            background: #f7f9f4;
+            border-radius: 12px;
+            padding: 18px;
+            margin-bottom: 30px;
+        }
+
+        .success-info p {
+            margin: 0;
+            color: #596151;
+            font-size: 14px;
+        }
+
+        /* Buttons */
+
+        .success-actions {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .success-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            min-width: 170px;
+            height: 48px;
+
+            padding: 0 20px;
+
+            border-radius: 10px;
+
+            text-decoration: none;
+
+            font-size: 14px;
+            font-weight: 600;
+
+            transition: all 0.2s ease;
+        }
+
+        .success-btn.primary {
+            background: #718355;
+            color: #ffffff;
+        }
+
+        .success-btn.primary:hover {
+            background: #5f7046;
+            transform: translateY(-1px);
+        }
+
+        .success-btn.secondary {
+            background: #ffffff;
+            color: #718355;
+            border: 1px solid #d9e0d2;
+        }
+
+        .success-btn.secondary:hover {
+            background: #f7f9f4;
+        }
+
+        .success-note {
+            margin-top: 25px;
+            color: #8a9084;
+            font-size: 12px;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 600px) {
+
+            .success-card {
+                padding: 40px 25px;
+            }
+
+            .success-card h1 {
+                font-size: 30px;
+            }
+
+            .success-actions {
+                flex-direction: column;
+            }
+
+            .success-btn {
+                width: 100%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <main class="success-page">
+
+        <div class="success-container">
+
+            <div class="success-card">
+
+
+                <!-- SUCCESS ICON -->
+
+                <div class="success-icon">
+                    ✓
+                </div>
+
+
+                <!-- HEADER -->
+
+                <div class="success-label">
+                    OLIVE CAFE
+                </div>
+
+
+                <h1>
+                    Booking Confirmed!
+                </h1>
+
+
+                <p>
+                    Thank you for choosing Olive Cafe.
+                    Your table booking has been successfully
+                    received.
+                </p>
+
+
+                <!-- INFO -->
+
+                <div class="success-info">
+
+                    <p>
+                        We have saved your booking details.
+                        We look forward to welcoming you at
+                        Olive Cafe.
+                    </p>
+
+                </div>
+
+
+                <!-- BUTTONS -->
+
+                <div class="success-actions">
+
+                    <a
+                        href="{% url 'home' %}"
+                        class="success-btn primary"
+                    >
+                        Back to Home
+                    </a>
+
+
+                    <a
+                        href="{% url 'booking' %}"
+                        class="success-btn secondary"
+                    >
+                        Book Another Slot
+                    </a>
+
+                </div>
+
+
+                <div class="success-note">
+                    Your booking details are securely stored
+                    in our system.
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
